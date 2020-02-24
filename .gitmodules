@@ -1,0 +1,3 @@
+[submodule "Practical microservices - Hand-on ED architecture with CQRS and ES/tutorial"]
+	path = Practical microservices - Hand-on ED architecture with CQRS and ES/tutorial
+	url = https://github.com/SuchSoftware/practical-microservices.git
