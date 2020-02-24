@@ -54,3 +54,32 @@ Data = Object state give object's event history
 (icone de la lettre) External integrations
 Projections: queries, analytics, predictive models, micro-services
 
+### Commands
+Request for a domain object to change it's state
+Domain objects decides to accept or reject a command
+Result of processing a command is a domain event
+
+### Domain events
+Each domain event represents a change in state of a domain object
+The data needs to be easily changeable (SQL add a complexity)
+Storage used for the events must be flexible enough
+
+### Event patterns
+Regex but for event streams + time
+- Customed signed up but hasn't taken a ride => offer coupon
+- Compare arrival times against planned => detect deviations
+
+### Reactions
+Invoke actions on external systems
+- Stripe / payment processing
+
+### Queries
+**Project events** onto a **reporting database**.
+Wipe anytime and rebuild by replaying event stream.
+
+## Evolution of and event-driven design system
+Photo des cubes rubiques
+- Programming language independant
+- Unlimited domain objects, projects, and reactions
+- Add new microservices over time
+
