@@ -45,3 +45,7 @@ Do build a relationship with the business people.
 
 ## From the trenches : Closing remarks
 Interview: Neil Ford->Rachel Laycock both @ Thoughtworks
+Biggest problem we all have:
+- Silver bullet thinking.
+    - Applying the solution to a problem to all problems.
+- If we don't look at mistake of the past, we'll keep repeating the same history.
