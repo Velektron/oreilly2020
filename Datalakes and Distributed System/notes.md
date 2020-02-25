@@ -35,3 +35,15 @@ Truth: Legacy systems don't need to be decommissioned and many data lakes integr
 
 Myth: Data of any format can be ingested and ML model will be to instantly input the data.
 Truth: The lake will accept data of any format, but ML capabilities need data to be curated and formatted to match expected input params.
+
+## Use cases and closing thoughts:
+- Data culture is important
+    - Leading client in aviation wanted to implement a data lake to centralize data for analytics purpose and help facilitate better DQ and governance.
+    - There were many cultural challenges around data ingest that resulted in redundant data elements without a single source of truth.
+    - Over the years, many data analyst and stewards unput data sets that had the same meaning using difference noenclatures. For example, some analysts were referring to passenger as a "seat" others a "chair" and others as "passenger"
+    - **Strategy**
+        - Work with leadership to establish a data governance framework that had input and feedback from all data stewards and system owners. Document the data standards that resulted from the framework to allow us to start flagging inaccurate data once it's in the lake.
+        - Ingest only the necessary data into the lake and monitor how users are interacting with the data through data provenance. Start to cleanse the data using the governance fraamework and feedback from data owners.
+        - Over time continue to ingest new data sets and repeat the proess to cleanse data and prepare it to production use. 
+- Sometimes a data lake is not the right solution
+    - For example, federal organisation that wanted to put 12 systems together but for operational purpose (prevent MFA, SSO)

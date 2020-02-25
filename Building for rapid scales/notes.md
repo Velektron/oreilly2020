@@ -68,3 +68,4 @@ Throughput : Number of Instances * request/instance
 Max number of devices / Users Id: 1 Millions
 Numbers of Pub/Sub: 15 (1000req/sec)
 
+To reduce the cost they are considering migrating from Google App Engine to GKE. 
