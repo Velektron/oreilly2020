@@ -1,29 +1,25 @@
 # Where do great architectures come from ?
-Speaker: Mary Poppendieck
-
-Get the presentation, it was really interesting. 
+*Speaker: Mary Poppendieck*
 
 Good architecture needs:
 - Redundancy
 - Localization 
 - Resiliency
 
+Not a lot of note for this one, but the presentation was an overview of her career and how architecture evolved.
+
+[Complete presentation](https://cdn.oreillystatic.com/en/assets/1/event/307/Where%20do%20great%20architectures%20come%20from_%20Presentation.pdf)
+
 # Intellectual Control
-Speaker: George Fairbank @ Google
+*Speaker: George Fairbank @ Google*
 
-They were able to ship every 2 weeks
+How he used to ships every two weeks;
 
-1995:
-- Reasoning (manual tests confirm reasoning)
-
-2020:
-- Wide blanket of tests (reasoning is less critical but still compatible)
+- In 1995: Reasoning (manual tests confirm reasoning)
+- In 2020: Wide blanket of tests (reasoning is less critical but still compatible)
 
 ## Kinds of control
-Intellectual control (IC)
-
-Run the code: no
-
+### Intellectual control (IC)
 Dijkstra
 - Proofs
 - Structured programming
@@ -31,21 +27,18 @@ Dijkstra
 Beyond proofs
 - Types, patterns, ADTs, DBC, static analysis.
 
-Statistical control (SC)
+### Statistical control (SC)
 - Run the code: yes
 - % of state space
 
 **Testing numbs us to our loss of reasoning**
-
-Once lost, IC is hard to recover
-- Software must stay on top of complexity
 
 Striving for IC lowers complexity:
 - Stay within complexity budget (assumption: complexity builds over time)
 - Seek simpler designs (assumption: Minds are limited)
 - Simplify existing code (assumption: Problems have many solutions of varying complexity)
 
-How can we keep intellectual control ?
+### How can we keep intellectual control ?
 - Keep IC high
     - Culture of good, simple design
     - Property-based testing
@@ -55,7 +48,9 @@ How can we keep intellectual control ?
     - Does process promote IC ?
     - Who is rewarded for helping IC ?
 
+[Complete presentation](https://cdn.oreillystatic.com/en/assets/1/event/307/Intellectual%20control%20Presentation.pptx)
+
 # Axiom
 Speaker: Mark Richards
 
-See PDF
+[The complete presentation will do a much better job than I at explaining it](https://conferences.oreilly.com/software-architecture/sa-ny/public/schedule/detail/81584)

@@ -4,12 +4,13 @@ Joel BARCIAUSKAS @ Data dog
 Datadog is an observalability and monitoring platform. 
 
 What is driving this amount of data: moving from the datacenter world->cloud/vm->containers->lambda and serverless function.
+
 At the same time, we're increasing the granularity of that data. 
 
 ## Architecture
 - Exemple of metrics query: "What is the system load on instance i-xyz for the last 30 minutes?"
 - Tags for all the dimensions
-    - Host /container: metrics by host
+    - Host/container metrics
     - Application: internal cache hits rates, timers by module
     - Service: hits, latencies or error by path or response code
     - Business: # of orders preocessed, $'s per second by CustomerId
@@ -17,8 +18,8 @@ At the same time, we're increasing the granularity of that data.
 Optimizing:
 - Query caching in front of the query system. 
 
-### Kafka for independ storage system 
-(photos)
+### Kafka for independant storage system 
+![img0.jpg](img0.jpg)
 
 Scaling through Kafka
 - Partition by customer, metric, tag set
@@ -29,16 +30,15 @@ Scaling through Kafka
 ## Deep dive in datastores
 - Do it less: only index what you need.
 
-Technology used: LevelDB, Redis, Cassandra, RocksDB + SQLIte
+Technology used: LevelDB, Redis, Cassandra, RocksDB + SQLite
 
 ## Handling synchronization
 Alerts / Monitors synchronization
 - Required to prevent false positives.
-    - Customer stop sending the data
+    - Customer stop sending the data, is it what the customer wanted to do or it just stopped working ? 
 - Injected heartbeat before the intake and post the query system they can get the expected latency.
 
 **Build the minimal synchronization possible**
-
 
 ## Approximation for deeper insights
 Types of metrics:

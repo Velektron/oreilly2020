@@ -7,7 +7,8 @@ EDD is the foundation that allow your software to evolve as you gain knowledge i
 
 Software is complex, perfect knowledge upfront is hard
 
-Agile : Managing changes is hard (trouver exemple de maison avec des roulottes dessus)
+Agile : Managing changes is hard, and you can often ends up with mutant project. e.g.:
+![img0.jpg](img0.jpg)
 
 EDD = Agile product & project managament + maintanable
 
@@ -30,7 +31,7 @@ EDD is the foundation that allows your software application to evolve as we gain
 **Software systems must evolve over time or become incresingly irrelevant**
 
 - Practice Continuous Improvement
-- Photo pour le gain domain knowledge (voir tel)
+![edd0.jpg](edd0.jpg)
 - Codify your knowledge in executable **BDD** scenarios (as document won't be updated and nobody will look at them)
 
 Given Pattern of past events -> When... executing command -> Then... expect new event
@@ -39,20 +40,22 @@ Given Pattern of past events -> When... executing command -> Then... expect new 
 - Workshop
 - Make sure everyone is on the same page
 - Focus on the business domain, what events can occur ?
-- Photo remember the past: Store fact about what happened + the past is the single source of truth
+- Store fact about what happened + the past is the single source of truth
+
+![edd2.jpg](edd2.jpg)
 
 ### Act on & learn from the past
 {User, Integrations, Future} -> Event Stream -> {Analytics, Reactions, Projections, Future, Predictions}
 You persist your event stream to a database.
 
 ## Architecture of an EDD
-(photo tel)
+- Domain object: Business Logic = Behavior + Data
+- Behavior = Finite Satte Machine + Time + Reactions
+- Data = Object state give object's event history
+- External integrations
+- Projections: queries, analytics, predictive models, micro-services
 
-Domain object: Business Logic = Behavior + Data
-Behavior = Finite Satte Machine + Time + Reactions
-Data = Object state give object's event history
-(icone de la lettre) External integrations
-Projections: queries, analytics, predictive models, micro-services
+![edd1.jpg](edd1.jpg)
 
 ### Commands
 Request for a domain object to change it's state
@@ -78,7 +81,7 @@ Invoke actions on external systems
 Wipe anytime and rebuild by replaying event stream.
 
 ## Evolution of and event-driven design system
-Photo des cubes rubiques
+![edd3.jpg](edd3.jpg)
 - Programming language independant
 - Unlimited domain objects, projects, and reactions
 - Add new microservices over time

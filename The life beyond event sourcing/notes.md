@@ -5,7 +5,7 @@ Event-Driven:
 
 ## Event sourcing
 ### How does it work ? 
-- Event needs to be played in chronological order
+- Events needs to be played in chronological order
 - Events are immutable so no update 
 
 ### Events
@@ -27,11 +27,11 @@ Event-Driven:
 
 - External updates
     - Deal with systems that follow this approach.
-    Deal with systems that don't follow this approach
+    - Deal with systems that don't follow this approach
         - Wrap any external system with a Gateway
 
 - External Queries
-    - Can you trust on external historical data
+    - Can you trust external historical data ?
 
 - Code change
     - New features

@@ -1,10 +1,8 @@
 # Holistic Architecture for the chapter 2 of the cloud era.
+**Sponsored by IBM**
 
-Sponsored by IBM
+*Speaker: Hillery Hunter*
 
-Speaker: Hillery Hunter
-
----
 ## Succesful cloud architeture must be holistic.
 Hybrid multicloud is reality, but it must be intentional.
 
